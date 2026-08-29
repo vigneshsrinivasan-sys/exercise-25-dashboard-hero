@@ -1,0 +1,403 @@
+/* GLOBAL RESETS AND BASE HTML */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* FOUNDATION / SYSTEM ROLES */
+.ds-surface-default {
+  background-color: #000000;
+}
+
+.ds-surface-muted {
+  background-color: #0a0a0a;
+}
+
+.ds-bg-default {
+  background-color: #ffffff;
+}
+
+.ds-bg-muted {
+  background-color: #fdf0e6;
+}
+
+/* TYPOGRAPHY ROLES */
+.ds-font-sans {
+  font-family: "Lato", sans-serif;
+}
+
+.ds-font-serif {
+  font-family: "Forum", serif;
+}
+
+.ds-font-mono {
+  font-family: "Space Mono", monospace;
+}
+
+.ds-tracking-wide {
+  letter-spacing: 0.05rem;
+}
+
+.ds-h1 {
+  font-size: 4.5rem;
+  font-weight: 600;
+}
+
+.ds-h2 {
+  font-size: 1.875rem;
+  font-weight: 300;
+}
+
+.ds-h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.ds-h4 {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.ds-body-lead {
+  font-size: 1.875rem;
+  font-weight: 300;
+}
+
+.ds-body-1 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.ds-body-2 {
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+
+.ds-body-3 {
+  font-size: 0.75rem;
+  font-weight: 400;
+}
+
+.ds-caption {
+  font-size: 1.125rem;
+  font-weight: 300;
+}
+
+.ds-text-regular {
+  font-weight: 500;
+}
+
+.ds-text-semibold {
+  font-weight: 600;
+}
+
+.ds-text-bold {
+  font-weight: 800;
+}
+
+.ds-text-italic {
+  font-style: italic;
+}
+
+.ds-text-underline {
+  text-decoration: underline;
+}
+
+.ds-text-nodecoration {
+  text-decoration: none;
+}
+
+/* COLOR UTILITIES */
+
+.ds-text-brand-default {
+  color: #b048ff;
+}
+
+.ds-text-default {
+  color: #17181a;
+}
+
+.ds-text-muted {
+  color: #666e80;
+}
+
+.ds-text-subtle {
+  opacity: 0.8;
+}
+
+.ds-text-white {
+  color: #ffffff;
+}
+
+.ds-accent {
+  color: #e95400;
+}
+
+.ds-state-success {
+  color: #53a553;
+}
+
+.ds-state-success-soft {
+  color: #9ae8ce;
+}
+
+.ds-state-danger {
+  color: #d62828;
+}
+
+.ds-state-danger-soft {
+  color: #f9f1f3;
+}
+
+.ds-state-warning {
+  color: #ff8000;
+}
+
+.ds-state-warning-soft {
+  color: #f9f3ee;
+}
+
+/* TEXT, SPACING & LAYOUT UTILITIES */
+.u-text-capitalize {
+  text-transform: capitalize;
+}
+
+.u-text-uppercase {
+  text-transform: uppercase;
+}
+
+.u-pad-24 {
+  padding: 24px;
+}
+
+.u-stack-8 > * + * {
+  margin-top: 8px;
+}
+
+.u-stack-16 > * + * {
+  margin-top: 16px;
+}
+
+.u-stack-24 > * + * {
+  margin-top: 24px;
+}
+
+.u-stack-32 > * + * {
+  margin-top: 32px;
+}
+
+.u-stack-48 > * + * {
+  margin-top: 48px;
+}
+
+.u-mt-16 {
+  margin-top: 16px;
+}
+
+.u-mr-16 {
+  margin-right: 16px;
+}
+
+.u-mr-24 {
+  margin-right: 24px;
+}
+
+.u-mb-8 {
+  margin-bottom: 8px;
+}
+
+.u-mb-16 {
+  margin-bottom: 16px;
+}
+
+.u-mb-24 {
+  margin-bottom: 24px;
+}
+
+.u-mb-48 {
+  margin-bottom: 48px;
+}
+
+.u-ml-8 {
+  margin-left: 8px;
+}
+
+.u-ml-24 {
+  margin-left: 24px;
+}
+
+.u-m-none {
+  margin: 0;
+}
+
+.u-gap-24 {
+  gap: 24px;
+}
+
+.u-gap-48 {
+  gap: 48px;
+}
+
+.u-grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.u-grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* COMPONENT OR CONTEXT SPECIFIC RULES & STATE OVERRIDES */
+
+/* PAGE & LAYOUT CONTEXT */
+
+.dashboard-page {
+  position: relative;
+
+  background-color: #000dff;
+  background-image: linear-gradient(
+    -180deg,
+    #000000ff 59%,
+    transparent 159.05%
+  );
+
+  min-height: 100vh;
+}
+
+.dashboard-page.dashboard-hero-bg-image::before {
+  left: 0;
+  position: absolute;
+  top: 0;
+  z-index: 0;
+
+  height: 100%;
+  width: 100%;
+
+  background-image: url("assets/8410.jpg");
+  background-size: cover;
+  opacity: 0.04;
+  content: "";
+  filter: grayscale(100%);
+}
+
+.dashboard-hero-fg-image {
+  position: relative;
+
+  margin: 0 auto;
+  width: 80vw;
+
+  border-radius: 32px 32px 0 0;
+
+  background-image: url("assets/dashboard-image.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: rgba(0, 13, 255, 0.32) 0px 16px 64px 16px;
+
+  aspect-ratio: 16 / 9;
+  /* content: ""; */
+}
+
+/* CORE COMPONENT SHELLS */
+
+.dashboard-hero {
+  position: relative;
+  z-index: 1;
+
+  margin: 0px auto;
+  padding: 48px;
+  width: 72vw;
+}
+
+.hero-header {
+  margin: 0px auto;
+  width: 100%;
+
+  text-align: center;
+}
+
+.hero-cards {
+  width: 100%;
+}
+
+.c-hero-card > .c-badge {
+  position: absolute;
+  right: -24px;
+  top: -8px;
+}
+
+main .c-button-fab {
+  bottom: 24px;
+  position: fixed;
+  right: 24px;
+  z-index: 2;
+}
+
+/* REUSABLE UI COMPONENTS */
+
+.c-hero-card {
+  position: relative;
+
+  padding: 16px;
+
+  border: 1px solid #4e4e4e;
+  border-radius: 16px;
+}
+
+.c-button {
+  padding: 16px 24px;
+
+  border: none;
+
+  border-radius: 16px;
+}
+
+.c-button-filled-white {
+  background-color: #ffffff;
+
+  color: #17181a;
+}
+
+.c-button-subtle {
+  background-color: rgba(102, 110, 128, 0.16);
+
+  color: #ffffff;
+}
+
+.c-button-fab {
+  padding: 16px 24px;
+
+  border: none;
+  border-radius: 32px;
+  box-shadow: 0 4px 8px #111927b0;
+}
+
+.c-badge {
+  padding: 8px 12px;
+
+  border-radius: 24px;
+}
+
+.c-badge-stable {
+  background-color: #9ae8ce;
+
+  color: #17181a;
+}
+
+/* COMPONENT VARIANTS & STATES */
+
+/* INTERACTION & ACCESSIBILITY REFINEMENTS */
+
+.c-button:hover {
+  cursor: pointer;
+}
+
+.c-button-filled-white:hover {
+  background-color: #b048ff;
+
+  color: #ffffff;
+}
+
+main .c-button-fab:hover {
+  cursor: pointer;
+}
