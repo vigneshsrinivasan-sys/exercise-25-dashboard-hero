@@ -1,6 +1,6 @@
 # Exercise 25 — Dashboard Hero — Team Performance
 
-[Live demo](https://vigneshsrinivasan-sys.github.io/exercise-25-dashboard-hero/) · [View source](https://github.com/vigneshsrinivasan-sys/exercise-25-dashboard-hero)
+[Live demo ↗](https://vigneshsrinivasan-sys.github.io/exercise-25-dashboard-hero/) · [HTML source](index.html) · [CSS source](styles.css)
 
 ![Rendered preview](preview.png)
 
@@ -25,4 +25,3 @@ The hero layers positioned foreground content over gradients and background imag
 ## Sequence
 
 **Exercise 25 of 27** · Independent practice
-
