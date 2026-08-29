@@ -1,6 +1,6 @@
 # Exercise 25 — Dashboard Hero — Team Performance
 
-[Live demo ↗](https://vigneshsrinivasan-sys.github.io/exercise-25-dashboard-hero/) · [HTML source](index.html) · [CSS source](styles.css)
+[Live demo](https://vigneshsrinivasan-sys.github.io/exercise-25-dashboard-hero/) · [HTML source](index.html) · [CSS source](styles.css)
 
 ![Rendered preview](preview.png)
 
